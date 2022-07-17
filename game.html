@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caro game</title>
+    <script type="text/javascript" src="board.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style type="text/css">
+        input[type=btn] {
+            width: 60px;
+            height: 60px;
+            background-color: azure;
+            text-align: center;
+            font-size: large;
+        }
+
+        input[type=btn]:hover {
+            background-color: rgb(230, 149, 63);
+            width: 50px;
+            height: 50px;
+        }
+
+        input[type=number]::-webkit-inner-spin-button,
+        input[type=number]::-webkit-outer-spin-button {
+            -webkit-appearance: none;
+        }
+    </style>
+</head>
+
+<body class="text-center bg-slate-400">
+    <h1 class="text-blue-100 text-3xl m-5"> Caro game</h1>
+    <hr>
+    <div class="inline-block">
+        <input class="m-2 bg-blue-100 text-center rounded" type="text" name="player1" id="player1"
+            placeholder="player1">
+        <br>
+        <input class="m-2 w-24 text-center rounded bg-pink-100" type="number" name="row" id="row" placeholder="rows"> 
+    </div>
+    <div class="inline-block">
+        <input class="m-2 bg-blue-100 text-center rounded" type="text" name="player2" id="player2"
+            placeholder="player2">
+        <br>
+        <input class="m-2 w-24 text-center rounded bg-pink-100" type="number" name="column" id="column"
+            placeholder="columns">  
+    </div>
+    <div>
+        <button
+        class="m-2 bg-red-300 hover:bg-blue-700  hover:text-white text-gray-600 font-bold border border-blue-700 rounded w-24"
+        id="play" onclick="playGame()">Play</button>
+    </div>
+   
+    <div>
+        <label class="text-red-300 font-bold text-2xl" id="name1"></label>
+        <label class="text-white font-bold text-2xl" id="vs"></label>
+        <label class="text-blue-300 font-bold text-2xl" id="name2"></label>
+    </div>
+    <hr>
+    <div class="content-start">
+        <div class="place-content-stretch" id="main">
+        </div>
+    </div>
+</body>
+
+</html>
