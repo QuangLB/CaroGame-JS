@@ -1,6 +1,6 @@
-# CaroGame-JS
+# JS vs Java Spring boot
 
-Java Script
+#Java Script
 
 Single-theard tức là người dùng chỉ được giải quyết một
 yêu cầu trong một khoảng thời gian nhất định trên website
@@ -40,8 +40,8 @@ kế thừa các thuộc tính (properties) cũng như phương thức
 
 
 
-*Sping framework
-Khái niệm
+#Sping framework :
+Khái niệm :
 Spring là framework phát triển các ứng dụng Java, nó giúp ứng dụng có hiệu năng cao, dễ kiểm thử và sử dụng lại code,…
 
 Spring tổ chức theo module nên dễ dàng tái sử dụng.
